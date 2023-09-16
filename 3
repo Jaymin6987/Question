@@ -1,0 +1,17 @@
+def find_max_min(arr):
+    if len(arr) == 0:
+        print("The array is empty.")
+        return
+
+    maximum = minimum = arr[0]
+
+    for num in arr:
+        if num > maximum:
+            maximum = num
+        if num < minimum:
+            minimum = num
+
+    print("Maximum is:", maximum)
+    print("Minimum is:", minimum)
+
+
