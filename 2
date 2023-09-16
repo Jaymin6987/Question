@@ -1,0 +1,14 @@
+def is_palindrome(input_string):
+    # Remove spaces and convert to lowercase for a case-insensitive comparison
+    cleaned_string = input_string.replace(" ", "").lower()
+    # Compare the cleaned string with its reverse
+    return cleaned_string == cleaned_string[::-1]
+
+# Test cases
+input_string1 = "anna"
+output1 = is_palindrome(input_string1)
+print(output1)  # Should print True
+
+input_string2 = "India"
+output2 = is_palindrome(input_string2)
+print(output2)  # Should print False
