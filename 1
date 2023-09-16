@@ -1,0 +1,17 @@
+def count_character(string, char):
+    count = 0
+    for c in string:
+        if c == char:
+            count += 1
+    return count
+
+# Example usage:
+input_string1 = "geeksforgeeks"
+char1 = 'e'
+result1 = count_character(input_string1, char1)
+print(f"Count character '{char1}' in the input string: {result1}")
+
+input_string2 = "abccdefgaa"
+char2 = 'c'
+result2 = count_character(input_string2, char2)
+print(f"Count character '{char2}' in the input string: {result2}")
